@@ -1,0 +1,140 @@
+:root{
+    --primary-color:#03a9f4;
+    --secondary-color:#1863bf;
+}
+
+.container.contact__container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    margin-left: 15rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.contact__options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option{
+    background: #03a8f461;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 0.4s ease;
+    width: 20rem;
+}
+
+.contact__option:hover{
+    border: 1px solid #03a9f4;
+    background: transparent;
+}
+
+.contact__option-icon{
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.contact__option a{
+    display: inline-block;
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+}
+
+/*============Form==========*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-left: 4rem;
+}
+
+input , textarea{
+    width: 100%;
+    background: transparent;
+    border: 2px solid #03a9f4;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    resize: none;
+    color: #fff;
+}
+
+.contbtns{
+    text-decoration: none;
+    background-color: #03a9f4;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.contbtns:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 30px #03a9f4;
+    background-color: #054360;
+}
+
+.sendbtn{
+    text-decoration: none;
+    background-color: #03a9f4;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    transition: all 0.4s ease;
+    border: none;
+}
+
+.sendbtn:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 30px #03a9f4;
+    background-color: #054360;
+}
+
+@media (max-width:1077px){
+    .contact__option{
+        margin-right: 7rem;
+        width: 15rem;
+        font-size: 70%;
+    }
+    .form{
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 769px ){
+    .container.contact__container{
+        margin-left:8rem;
+
+    }
+}
+
+@media (max-width:820px){
+    .container.contact__container{
+        margin-left:10rem;
+    }
+}
+
+@media (max-width: 414px){
+
+    .container.contact__container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5rem;
+
+    }
+    .contact__option{
+        margin-bottom:1.2rem;
+    }
+    .form{
+        margin-left: -4rem;
+        margin-bottom: 3rem;
+    }
+    .form input{
+        width: 15rem;
+    }
+}

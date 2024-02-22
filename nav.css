@@ -1,0 +1,65 @@
+:root{
+    --primary-color:#03a9f4;
+    --secondary-color:#1863bf;
+}
+nav{
+    background-color: #03a8f43d;
+    width: max-content;
+    padding: 0.7rem 1.7rem;
+    border-radius: 3rem;
+    display: flex;
+    gap: 0.8rem;
+    z-index: 2;
+    position: fixed;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    bottom: 2rem;
+    backdrop-filter: blur(45px);
+}
+
+nav a,.Darkmode{
+    background: transparent;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border: none;
+}
+
+nav a:hover,.Darkmode:hover{
+    background-color: #03a9f4;
+    cursor: pointer;
+
+}
+
+.active nav a{
+    background: #03a9f4;
+    color: #fff;
+}
+@media (max-width: 1415px){
+    nav{
+        left: 36%;
+    }
+}
+@media (max-width: 821px){
+    nav{
+        left: 39%;
+        bottom: 2rem;
+    }
+}
+@media (max-width: 769px){
+    nav{
+        left: 41%;
+        bottom: 1rem;
+        
+    }
+}
+  
+@media (max-width: 414px){
+    nav{
+        left: 3.5%;
+        bottom: 10px;
+    }
+}
